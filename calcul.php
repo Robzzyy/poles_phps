@@ -18,7 +18,7 @@ Elles ont toutes un rôle défini
 
 */
 
-include "functions.inc.php";
+include "inc/functions.inc.php";
 
 debug($_GET);
 debug($_POST);

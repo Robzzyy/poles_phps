@@ -33,3 +33,10 @@ function operation($chiffre1, $chiffre2,$operator) {
 
 
 $aujourdhui = "lundi";
+
+
+
+function redirection($url) {
+    header("Location: $url");
+    exit;
+}

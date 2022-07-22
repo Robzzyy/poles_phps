@@ -1,8 +1,9 @@
-<?php
 
-include_once "functions.inc.php";
 
-?>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -15,5 +16,15 @@ include_once "functions.inc.php";
 </head>
 <body>
     <div class="container">
+        <?php include "vues/menu.html.php" ?>
+        <?php if ( !empty($_SESSION["erreur"]) ): ?>
+            <div class= "alert alert-danger"> <?= $_SESSION["erreur"] ?>
+
+            </div>
+            <?php endif; ?>
+
+            <?php if ( !empty($_SESSION["success"]) ): ?>
+                <div class="alert alert-succes"> <?= $_SESSION["success"] ?></div>
+            <?php endif; ?>
         
     
